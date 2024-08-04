@@ -1,0 +1,68 @@
+header { 
+    @include flexbox(flex, space-between);
+    background-color: $gris_clarito;
+    padding: 10px;
+    margin:10px; 
+    position: sticky;
+    top: 0;
+    z-index:100;
+    align-items: center;
+    img{
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        max-width: 100%;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .section_titulo{
+        @include flexbox(flex, center);
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            @include texto-estilo(null, $blanco, $fuente_titulo);
+            @include flexbox(flex, space-around);
+            padding: 5px;
+            flex-wrap: wrap;
+        }
+        h2 {
+            @extend h1
+        }
+     }
+    nav{
+        display: flex;
+        .label-hamburguesa{
+            display: none;
+            }
+        .menu-hamburguesa{
+            display: none;
+        }
+        .menu{
+            @include flexbox(flex, center);
+            list-style-type: none;  
+            flex-wrap: wrap;
+            li{
+                padding: 10px;
+                display: inline-block; 
+                a{
+                    @include flexbox(flex, space-around);
+                    font-size: 1.2rem;
+                    color: $blanco;
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding: 20px;
+                    flex-wrap: wrap;
+                    transition: all 1s;
+                    &:hover{ 
+                        color: $gris_clarito;
+                        background-color: $blanco;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+    }
+}

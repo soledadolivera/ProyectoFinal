@@ -1,0 +1,65 @@
+.contenido {
+    .container {
+      .subtitulo {
+        @include texto-estilo(2.5rem, $marron, $fuente_titulo);
+        margin-bottom: 30px;
+      }
+      .card {
+        border: 1px solid $gris_clarito;
+        border-radius: 10px;
+        overflow: hidden;
+        .card-body {
+          background-color: $beige;
+          color: $marron;
+          .card-title {
+            font-family: $fuente_titulo, serif;
+            font-size: 1.5rem;
+          }
+          .card-text {
+            font-family: $fuente_parrafo, serif;
+            font-size: 1rem;
+            .toggle-checkbox {
+                display: none;
+              }
+              .toggle-label {
+                cursor: pointer;
+                background-color: $marron;
+                color: $blanco;
+                border: none;
+                display: block;
+                &:hover {
+                    background-color: darken($marron, 10%);
+                }
+              }
+              .more-content {
+                display: none;
+                margin-top: 10px;
+              }
+              .toggle-checkbox:checked + .toggle-label + .more-content {
+                display: block;
+              }
+              .toggle-checkbox:checked + .toggle-label {
+                display: none;
+              }
+              .toggle-checkbox:checked + .toggle-label + .more-content + .toggle-label-collapsed {
+                display: block;
+              }
+              .toggle-label-collapsed {
+                cursor: pointer;
+                color: #047dfe; 
+                text-decoration: underline;
+                display: none;
+                margin-top: 10px;
+              }
+          }
+        }
+      }
+    }
+  } 
+  
+
+.musica{
+    .subtitulo{
+        @include texto-estilo(1.5rem, $marron, $fuente_titulo);
+    }
+}

@@ -1,0 +1,29 @@
+footer{
+    @include texto-estilo(1.2rem, $blanco, $fuente_titulo);
+    margin: 10px;
+    background-color: $gris_clarito;
+    padding: 10px;
+    h4{
+        @include texto-estilo(1.2rem, $blanco, $fuente_titulo);
+        margin: 5px; 
+    }
+    .social-media{ 
+        @include flexbox(flex, center);
+        gap: 20px;
+        .Facebook{
+            a{
+                color: #fff;
+                text-decoration: none; 
+                &:hover {
+                    color: #ddd;
+                }
+            }
+        }
+        .Instagram{
+           @extend .Facebook
+        }
+    }
+    .Copyright{
+        @include texto-estilo(null, $blanco, $fuente_parrafo)
+    }
+}

@@ -10,14 +10,14 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(168, 177, 174);
   padding: 10px;
   margin: 10px;
   position: sticky;
   top: 0;
   z-index: 100;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 header img {
@@ -32,25 +32,18 @@ header img:hover {
 }
 header .section_titulo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-header .section_titulo h1 {
+header .section_titulo h1, header .section_titulo h2 {
   color: aliceblue;
-  padding: 5px;
   font-family: "Merriweather", serif;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-}
-header .section_titulo h2 {
-  color: aliceblue;
   padding: 5px;
-  font-family: "Merriweather", serif;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 header nav {
   display: flex;
@@ -62,25 +55,24 @@ header nav .menu-hamburguesa {
   display: none;
 }
 header nav .menu {
-  list-style-type: none;
   display: flex;
   justify-content: center;
+  list-style-type: none;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 header nav .menu li {
   padding: 10px;
   display: inline-block;
 }
 header nav .menu li a {
-  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
   font-size: 1.2rem;
+  color: aliceblue;
   font-weight: bold;
   text-decoration: none;
   padding: 20px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   transition: all 1s;
 }
 header nav .menu li a:hover {
@@ -95,20 +87,20 @@ main .acomodar_contenido {
   gap: 20px;
   padding: 20px;
 }
-main .section1 {
-  text-align: center;
-}
-main .section1 .subtitulo {
+main .section1 .subtitulo, main .section1 .contacto .formulario .subtitulo, .contacto .formulario main .section1 .subtitulo {
+  font-size: 2.5rem;
   color: rgb(148, 107, 53);
+  font-family: "Merriweather", serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-  font-size: 3rem;
 }
 main .section1 p {
-  padding: 20px;
-  line-height: 1.5;
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
 }
 main .section2 {
   display: flex;
@@ -134,49 +126,20 @@ main .section2 .imagenes .imagenes1 img:hover {
 }
 main .section2 .imagenes .imagenes1 .parrafo {
   text-align: center;
-  margin: 10px 0;
+  margin: 10px;
+  font-family: "Playfair Display";
 }
-main .section3 .subtitulo {
+main .section3 .subtitulo, main .section3 .contacto .formulario .subtitulo, .contacto .formulario main .section3 .subtitulo {
   color: rgb(148, 107, 53);
+  font-family: "Merriweather", serif;
   text-align: center;
 }
 main .section3 p {
-  padding: 20px;
-  line-height: 1.5;
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
-}
-
-footer {
-  margin: 10px;
-  background-color: rgb(168, 177, 174);
-  padding: 10px;
-  color: aliceblue;
-  font-size: 1.5rem;
-}
-footer h4 {
-  margin: 5px;
-}
-footer .social-media .Facebook a {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-}
-footer .social-media .Facebook a:hover {
-  color: #ddd;
-}
-footer .social-media .Instagram a {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none;
-}
-footer .social-media .Instagram a:hover {
-  color: #ddd;
-}
-footer .Copyright {
   text-align: center;
-  font-family: "Playfair Display";
-  color: aliceblue;
+  padding: 20px;
+  line-height: 1.5;
 }
 
 .nosotros {
@@ -184,7 +147,6 @@ footer .Copyright {
   background-size: cover;
   background-repeat: repeat;
   background-position: 0 0;
-  color: aliceblue;
   animation: moverFondo 20s linear infinite;
 }
 @keyframes moverFondo {
@@ -196,25 +158,30 @@ footer .Copyright {
   }
 }
 .nosotros .subtitulo1 {
-  text-align: center;
+  font-size: 2.5rem;
   color: rgb(239, 193, 193);
-  font-size: 3rem;
+  font-family: "Merriweather", serif;
+  text-align: center;
 }
 .nosotros .subtitulo2 {
-  text-align: center;
+  font-size: 1.8rem;
   color: rgb(239, 193, 193);
-  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  text-align: center;
 }
 .nosotros p {
+  font-size: 1.2rem;
+  color: aliceblue;
+  font-family: "Playfair Display", serif;
+  text-align: center;
   padding: 20px;
   line-height: 1.5;
-  font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
 }
 
 .contenido .container .subtitulo {
-  color: rgb(148, 107, 53);
   font-size: 2.5rem;
+  color: rgb(148, 107, 53);
+  font-family: "Merriweather", serif;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -243,7 +210,6 @@ footer .Copyright {
   background-color: rgb(148, 107, 53);
   color: aliceblue;
   border: none;
-  text-decoration: underline;
   display: block;
 }
 .contenido .container .card .card-body .card-text .toggle-label:hover {
@@ -270,30 +236,34 @@ footer .Copyright {
   margin-top: 10px;
 }
 
-.musica .subtitulo {
+.musica .subtitulo, .musica .contacto .formulario .subtitulo, .contacto .formulario .musica .subtitulo {
+  font-size: 1.5rem;
   color: rgb(148, 107, 53);
+  font-family: "Merriweather", serif;
   text-align: center;
 }
 
-.novedades .subtitulo {
-  color: rgb(148, 107, 53);
-  text-align: center;
+.novedades .subtitulo, .novedades .contacto .formulario .subtitulo, .contacto .formulario .novedades .subtitulo {
   font-size: 2.5rem;
+  color: rgb(148, 107, 53);
+  font-family: "Merriweather", serif;
+  text-align: center;
 }
 .novedades .subtitulo3 {
-  text-align: center;
-  color: rgb(148, 107, 53);
-  font-size: 20px;
   font-size: 2rem;
+  color: rgb(148, 107, 53);
+  font-family: "Merriweather", serif;
+  text-align: center;
 }
 .novedades p {
-  padding: 20px;
-  line-height: 1.5;
   font-size: 1.2rem;
   font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
 }
 
-.contacto .subtitulo {
+.contacto .subtitulo, .contacto .formulario .subtitulo {
   color: rgb(148, 107, 53);
   text-align: center;
 }
@@ -302,8 +272,37 @@ footer .Copyright {
   margin: 10px auto;
   text-align: center;
 }
-.contacto .formulario .subtitulo {
-  color: rgb(148, 107, 53);
+footer {
+  font-size: 1.2rem;
+  color: aliceblue;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(168, 177, 174);
+  padding: 10px;
+}
+footer h4 {
+  font-size: 1.2rem;
+  color: aliceblue;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin: 5px;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer .social-media .Facebook a, footer .social-media .Instagram a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .social-media .Facebook a:hover, footer .social-media .Instagram a:hover {
+  color: #ddd;
+}
+footer .Copyright {
+  color: aliceblue;
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 
@@ -319,7 +318,7 @@ footer .Copyright {
   header .section_titulo {
     display: flex;
   }
-  header .section_titulo h1 {
+  header .section_titulo h1, header .section_titulo h2 {
     font-size: 1.5rem;
   }
   header .section_titulo h2 {
@@ -338,7 +337,7 @@ footer .Copyright {
     color: aliceblue;
     background: none;
     border: none;
-    margin: 10px 0;
+    margin: 10px;
   }
   header nav .label-hamburguesa:focus {
     outline: none;
@@ -402,7 +401,7 @@ footer .Copyright {
   header .section_titulo {
     display: flex;
   }
-  header .section_titulo h1 {
+  header .section_titulo h1, header .section_titulo h2 {
     font-size: 1.5rem;
   }
   header .section_titulo h2 {

@@ -1,0 +1,13 @@
+.novedades{
+    .subtitulo{
+        @include texto-estilo(2.5rem, $marron, $fuente_titulo);
+    }
+    .subtitulo3{
+        @include texto-estilo(2rem, $marron, $fuente_titulo);
+    }
+    p{
+        @include texto-estilo(1.2rem, null, $fuente_parrafo);
+        padding: 20px;
+        line-height: 1.5;
+    }
+}

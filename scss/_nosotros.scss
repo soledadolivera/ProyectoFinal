@@ -1,0 +1,26 @@
+.nosotros{
+    background-image: url(../img/FondoNosotros.png);
+    background-size: cover; 
+    background-repeat: repeat; 
+    background-position: 0 0; 
+    animation: moverFondo 20s linear infinite; 
+    @keyframes moverFondo {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+      }
+    .subtitulo1{
+        @include texto-estilo(2.5rem, $rosa, $fuente_titulo);
+    }
+    .subtitulo2{
+        @include texto-estilo(1.8rem, $rosa, $fuente_titulo);
+    }
+    p{
+        @include texto-estilo(1.2rem, $blanco, $fuente_parrafo);
+        padding: 20px;
+        line-height: 1.5;
+    }
+}

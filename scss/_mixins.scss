@@ -1,0 +1,10 @@
+@mixin texto-estilo ($font-size, $color, $font-family){
+    font-size: $font-size;
+    color: $color;
+    font-family: $font-family, serif;
+    text-align: center;
+}
+@mixin flexbox($display, $justify-content) {
+    display: $display;
+    justify-content: $justify-content; 
+}
