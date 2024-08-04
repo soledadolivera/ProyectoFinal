@@ -1,0 +1,160 @@
+/* reseteo de codigo para unificar los espacios */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(234, 222, 207);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    background-color: rgb(168, 177, 174);
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+    z-index:100;
+}
+
+header img{
+    width: 150px;
+    padding: 10px;
+    max-width: 40cm;
+    min-width: 2cm;
+    height: auto;
+}
+
+nav {
+    top: 0;
+    z-index: 100;
+}
+
+.menu {
+    position: sticky;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.acomodar_contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+h1, h2 {
+    color: aliceblue;
+    padding: 5px;
+    font-family: "Merriweather", serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+li{
+    position: sticky;
+    padding: 10px;
+    display: inline-block; /* para que me queden los elementos uno al lado del otro */ 
+}
+li a:hover{color: rgb(168, 177, 174);
+    background-color: aliceblue;
+}
+
+
+a {
+    position: sticky;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subtitulo {
+    color: rgb(148, 107, 53);
+    text-align: center;
+}
+
+p{
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-family: "Playfair Display", serif;
+}
+
+img {
+    
+    width: 500px;
+    min-width: 300px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img:hover{
+    opacity: .5;
+}
+
+footer {
+    margin: 20px;
+    background-color:  rgb(168, 177, 174);
+    padding: 20px;
+    color: aliceblue;
+}
+h4 {margin: 5px;
+
+}
+.formulario {
+    width: 500px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.nosotros{
+    background-image: url(../img/FondoNosotros.png);
+    color: aliceblue;
+}
+
+.subtitulo1 {
+    text-align: center;
+    color:rgb(239, 193, 193) ;
+    font-size: 30px;
+}
+
+.subtitulo2 {
+    text-align: center;
+    color:rgb(239, 193, 193);
+    font-size: 20px;
+}
+
+.subtitulo3{
+    text-align: center;
+    color: rgb(148, 107, 53);
+    font-size: 20px;
+}
+
+.imagenes { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.imagenes1 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parrafo {
+    text-align: center;
+}
+
